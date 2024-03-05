@@ -12,7 +12,7 @@ const todoStore = useTodoStore()
   <div class="my-32 space-y-3 w-fit max-w-md mx-auto">
     <Card>
       <CardHeader class="p-4">
-        <CardTitle>Completed To-Dos: {{ todoStore.total }}</CardTitle>
+        <CardTitle>Total To-Dos: {{ todoStore.total }}</CardTitle>
       </CardHeader>
     </Card>
     <Card>

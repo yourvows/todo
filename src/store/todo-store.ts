@@ -20,6 +20,7 @@ export const useTodoStore = defineStore({
       localStorage.setItem("todos", JSON.stringify(this.todos))
     },
     update(id: ITodo['id'], todo: ITodo) {
+      if(!todo.text) return this.remove(id)
       const index = this.todos.findIndex((todo) => todo.id === id)
       this.todos[index].text = todo.text
       this.todos[index].completed = !todo.completed

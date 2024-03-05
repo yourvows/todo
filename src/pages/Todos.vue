@@ -29,6 +29,7 @@ const addTodo = () => {
 };
 
 const saveEdit = (todo: ITodo) => {
+  console.log(todo)
   todosStore.update(todo.id, todo);
 };
 </script>
