@@ -5,3 +5,7 @@
 :root{
     background-color: gray;
 }
+
+input {
+    touch-action: manipulation;
+}
